@@ -56,7 +56,7 @@
 
 	    var change_label = function(node) {
 		if (node.name) {
-		    node.label = cofog_labels[node.name.replace('-','.','g')];
+		    node.label = cofog_labels[node.name.replace('-','.','g')] || "";
 		}
 		if (node.children) {
 		    var children = []
